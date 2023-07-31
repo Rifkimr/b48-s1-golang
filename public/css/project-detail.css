@@ -1,0 +1,180 @@
+@import url("https://api.fontshare.com/v2/css?f[]=switzer@101,600,701,800,501,601,900,100,700,901,400,201,401,200,300,301,801,500&display=swap");
+* {
+  font-family: "Switzer", sans-serif;
+  text-decoration: none;
+  letter-spacing: 0.025em;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url(/assets/img/magicpattern-gradient-1685863310808.png);
+  background-size: cover;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+  font-size: 20px;
+}
+
+nav ul li {
+  margin-right: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+}
+
+nav ul li a:hover {
+  color: orangered;
+}
+
+.button-nav {
+  background-color: transparent;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 10px;
+  margin-right: 20px;
+  font-size: large;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  color: orangered;
+}
+
+.button-right {
+  background-color: transparent;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 10px;
+  margin-right: 20px;
+  font-size: large;
+  border: none;
+  cursor: pointer;
+}
+
+/* Styling Detail Project */
+
+.container-detail {
+  background-color: yellow;
+  margin: auto;
+  width: 100% auto;
+  max-width: 50rem;
+  display: flex;
+  gap: 20px;
+  border: 1px solid white;
+  border-radius: 10px;
+  box-shadow: 0 5px 5px 0px;
+}
+
+.card-detail img {
+  width: 25rem;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.duration-detail {
+  width: 100%;
+  margin: 10px;
+}
+
+.duration-icon i {
+  font-size: 25px;
+  margin-bottom: 15px;
+  margin-right: 10px;
+}
+
+.duration-detail h5 {
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+}
+.duration-detail label {
+  color: rgb(0, 0, 0);
+}
+
+.detail-tech {
+  display: flex;
+  gap: 50px 40px;
+}
+
+.caption p {
+  color: rgb(0, 0, 0);
+}
+
+.caption h5 {
+  color: rgb(3, 3, 3);
+  font-weight: bold;
+}
+
+.hamburger-nav-container a:hover {
+  color: aqua;
+}
+
+#barsmenu {
+  display: none;
+  margin-right: 40px;
+}
+
+#barsmenu i:hover {
+  color: aqua;
+}
+
+#barsmenu i {
+  color: white;
+}
+
+.hamburger-nav-container {
+  font-size: 20px;
+  list-style-type: none;
+  display: none;
+}
+
+.hamburger-nav-container a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px;
+  color: white;
+  background-color: transparent;
+}
+
+@media only screen and (max-width: 990px) {
+  .container-detail {
+    flex-direction: column;
+    margin: 20px;
+  }
+
+  .card-detail img {
+    width: 100%;
+  }
+
+  .duration-detail {
+    padding: 15px;
+  }
+
+  .caption p {
+    text-align: justify;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .item-collapse {
+    display: none;
+  }
+
+  #barsmenu {
+    display: block;
+  }
+}

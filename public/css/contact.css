@@ -1,0 +1,168 @@
+@import url("https://api.fontshare.com/v2/css?f[]=switzer@101,600,701,800,501,601,900,100,700,901,400,201,401,200,300,301,801,500&display=swap");
+* {
+  font-family: "Switzer", sans-serif;
+  text-decoration: none;
+  letter-spacing: 0.025em;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url(public/img/magicpattern-gradient-1685863310808.png);
+  background-size: cover;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+  font-size: 20px;
+}
+
+nav ul li {
+  margin-right: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+}
+
+nav ul li a:hover {
+  color: orangered;
+}
+
+.button-nav {
+  background-color: black;
+  color: white;
+  width: 100%;
+  padding: 10px 15px;
+  margin-top: 20px;
+  border-radius: 10px;
+  margin-right: 20px;
+  font-size: large;
+  border: none;
+  cursor: pointer;
+}
+
+.button-right {
+  background-color: transparent;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 10px;
+  margin-right: 20px;
+  font-size: large;
+  border: none;
+  cursor: pointer;
+}
+
+.container-form {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  height: 100vh;
+  margin-bottom: 50px;
+}
+
+.contact-form h1 {
+  color: white;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  width: 450px;
+}
+
+.contact-form div label {
+  display: flex;
+  flex-direction: column;
+  width: 100% auto;
+}
+
+label {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: white;
+}
+
+input,
+select,
+textarea {
+  border-radius: 5px;
+  border: none;
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 10px;
+  font-size: 15px;
+  box-shadow: 0 2px 3px black;
+}
+
+textarea {
+  resize: none;
+  height: 100px;
+}
+
+.hamburger-nav-container a:hover {
+  color: aqua;
+}
+
+#barsmenu {
+  display: none;
+  margin-right: 40px;
+}
+
+#barsmenu i:hover {
+  color: aqua;
+}
+
+#barsmenu i {
+  color: white;
+}
+
+.hamburger-nav-container {
+  font-size: 20px;
+  list-style-type: none;
+  display: none;
+}
+
+.hamburger-nav-container a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px;
+  color: white;
+  background-color: transparent;
+}
+
+@media only screen and (max-width: 900px) {
+  .contact-form {
+    width: 100%;
+    margin: 20px;
+    justify-content: center;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .item-collapse {
+    display: none;
+  }
+
+  #barsmenu {
+    display: block;
+  }
+}

@@ -1,0 +1,307 @@
+@import url("https://api.fontshare.com/v2/css?f[]=switzer@101,600,701,800,501,601,900,100,700,901,400,201,401,200,300,301,801,500&display=swap");
+* {
+  font-family: "Switzer", sans-serif;
+  text-decoration: none;
+  letter-spacing: 0.025em;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url(/assets/img/magicpattern-gradient-1685863310808.png);
+  background-size: cover;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+  font-size: 20px;
+}
+
+nav ul li {
+  margin-right: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+}
+
+nav ul li a:hover {
+  color: orangered;
+}
+
+.button-nav {
+  background-color: transparent;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 10px;
+  margin-right: 20px;
+  font-size: large;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  color: orangered;
+}
+
+/*//////////////////////////////////*/
+
+.project-form {
+  padding: 20px;
+}
+
+.project-form form label {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.container-form {
+  width: 500px;
+  margin: auto;
+}
+
+.container-form input,
+textarea {
+  margin-bottom: 20px;
+}
+
+form #input-name-project {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+}
+
+#duration-date {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+#duration-date input {
+  display: flex;
+
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+}
+
+form textarea {
+  word-wrap: normal;
+  resize: none;
+  width: 100%;
+  border: none;
+  border-radius: 5px;
+  height: 200px;
+}
+
+.checkbox-group {
+  display: grid;
+  grid-template-columns: repeat(2, 2fr);
+  margin-top: 10px;
+}
+
+.checkbox-group div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 4px 4px;
+  margin-bottom: 4px;
+}
+.checkbox-group input {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.input-file p {
+  font-size: 15px;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 12px 10px;
+  background-color: rgb(209, 205, 205);
+  border-radius: 5px;
+  color: grey;
+}
+
+.input-file label {
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  margin-top: 15px;
+  cursor: pointer;
+}
+
+.button-group button {
+  background-color: black;
+  width: 100%;
+  border-radius: 5px;
+  border: none;
+  color: white;
+  padding: 10px;
+  font-size: 20px;
+  cursor: pointer;
+  margin-bottom: 100px;
+}
+
+.button-group button:hover {
+  background-color: rgb(36, 194, 194);
+}
+
+/* Styling dtail project */
+
+.container-detail-project {
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+.card-group {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding: 10px;
+  margin-top: 2px;
+  gap: 10px 20px;
+}
+
+.container-card {
+  background-color: white;
+  padding: 10px;
+  border-radius: 5px;
+  width: 100%;
+  max-width: 18rem;
+  box-shadow: 0 0 10px black;
+}
+
+.container-card img {
+  width: 18rem;
+  height: 15rem;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.container-card a {
+  text-decoration: none;
+  color: black;
+}
+
+.container-card .duration {
+  margin: 0.5em 0;
+  line-height: 1p;
+  font-size: small;
+}
+
+.tech-icont {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+.tech-icont i {
+  margin-right: 25px;
+}
+
+.button-change {
+  display: flex;
+}
+
+.button-change button {
+  width: 49%;
+}
+
+.edit-button {
+  padding: 10px 20px;
+  margin-right: 6px;
+  border: 1px solid black;
+  border-radius: 10px;
+  font-size: 15px;
+}
+
+.edit-button:hover {
+  background-color: rgb(19, 42, 248);
+}
+
+.delete-button {
+  padding: 10px 20px;
+  margin-right: 0;
+  border: 1px solid rgb(231, 13, 13);
+  border-radius: 10px;
+  font-size: 15px;
+}
+
+.delete-button:hover {
+  background-color: red;
+}
+
+.hamburger-nav-container a:hover {
+  color: aqua;
+}
+
+#barsmenu {
+  display: none;
+  margin-right: 40px;
+}
+
+#barsmenu i:hover {
+  color: aqua;
+}
+
+#barsmenu i {
+  color: white;
+}
+
+.hamburger-nav-container {
+  font-size: 20px;
+  list-style-type: none;
+  display: none;
+}
+
+.hamburger-nav-container a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px;
+  color: white;
+  background-color: transparent;
+}
+
+@media only screen and (max-width: 550px) {
+  .project-form {
+    flex-direction: column;
+  }
+
+  .container-form {
+    display: flex;
+    width: 100%;
+  }
+
+  form {
+    width: 100%;
+  }
+
+  #duration-date {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .item-collapse {
+    display: none;
+  }
+
+  #barsmenu {
+    display: block;
+  }
+}

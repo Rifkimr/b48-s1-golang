@@ -1,0 +1,119 @@
+// let pemainPersib1 = "juprianto";
+// let pemainPersib2 = "marclok";
+// let pemainPersib3 = "becham putra";
+
+// console.log(pemainPersib1);
+// console.log(pemainPersib2);
+// console.log(pemainPersib3);
+
+// Arrayy 
+
+// let pemainPersib = ["Daisuke sato", "ahmad Juprianto", "Febri", "Ciro"];
+// console.log(pemainPersib)
+// console.log(pemainPersib[3])
+// console.log(pemainPersib[0])
+// console.log(pemainPersib[1])
+// console.log(pemainPersib[2])
+
+// object
+
+// let namaPemain = "sato"
+// let posisi = "Back left"
+// let nomorPunggung = 15
+
+// console.log(namaPemain)
+// console.log(posisi)
+// console.log(nomorPunggung)
+
+// let dataPemain1 = {
+//     namaPemain : "sato",
+//     posisi : "back Left",
+//     nomorPunggung : 15
+// }
+
+// let dataPemain2 = {
+//     namaPemain : "Juprianto",
+//     posisi : "back righ",
+//     nomorPunggung : "21"
+// }
+
+// let dataPemain3 = {
+//     namaPemain : "febri",
+//     posisi : "sayap kanan",
+//     nomorPunggung : "74"
+// }
+// let dataPemain4 = {
+//     namaPemain : "david",
+//     posisi : "striker",
+//     nomorPunggung : "45"
+// }
+
+// console.log(dataPemain1)
+// console.log(dataPemain2)
+// console.log(dataPemain3)
+// console.log(dataPemain4)
+// console.log(dataPemain1.namaPemain)
+
+// Array of object ? di dalam array ada object 
+
+// let dataPemainCadangan = [
+//     {namaPemain:"Abdul azis", posisi:"CB", nomorPunggung:23},
+//     {namaPemain:"Teja", posisi:"GK", nomorPunggung: 20},
+//     {namaPemain:"viktor", posisi:"CB", nomorPunggung: 10}
+// ]
+//latihan foreach 
+const arr = ["marclok", "becham", "david", "daisuke sato"];
+arr.forEach(function(data) {
+    console.log(data)
+})
+//latihan map 
+const arr2 = ["marclok", "becham", "david", "daisuke sato"];
+const double = arr2.map((item) => {
+    return item + 2;
+})
+
+console.log(double)
+
+//filter 
+const arr3 = [1, 2, 3, 4, 5];
+const evenNumber = arr3.filter(function(item) {
+    return item % 2 == 1;
+})
+
+console.log(evenNumber)
+
+//reduce 
+const arr4 = [1,2,3,4,5];
+const sum =arr4.reduce(function(total,item) {
+    console.log(total)
+    console.log(item)
+
+    return total + item;
+},10)
+
+console.log(sum)
+
+// inheritens
+class Pemain {
+    constructor(nama, umur, usia) {
+        this.nama = nama;
+        this.umur = umur;
+        this.usia = usia;
+    }
+    lineUP() {
+        return `ini adalah ${this.nama} umurnya adalah ${this.umur} kemuadian usianya adalah${this.usia} `
+    }
+}
+
+class Cadangan {
+    constructor(nama, umur, usia, alamat) {
+        super(nama, umur, usia)
+        this.alamat = alamat
+    }
+
+    lineUP() {
+        return `${super.lineUP()} dan berasal dari ${this.alamat} `
+    }
+}
+let persib = new Cadangan("marcklok", 24 , 25, "spanyol")
+console.log(persib.lineUP())
